@@ -9,6 +9,7 @@
       <link rel="stylesheet" href="css/style.css">
       <script src="http://code.jquery.com/jquery.min.js"></script>
       <script src="js/jquery.sticky-kit.min.js"></script>
+      <script src="js/app.js"></script>
    </head>
    <body>
       <div class="main">
@@ -20,13 +21,15 @@
          <!--close "upper-bg"-->
          <section class="list">
             <i class="list-menu fa fa-bars fa-lg"></i>
-            <form class="list-name">
-               <input type='text' placeholder='List Name'/>
-            </form>
+            <div class="list-name">
+               <input id='listName' type='text' placeholder='List Name'/>
+               <input id='addList' type='button'/>
+            </div>
             <div class="list-items">
-               <form>
-                  <input type='text' placeholder='New Item...'/>
-               </form>
+             
+                  <input id='itemName' type='text' placeholder='New Item...'/>
+                  <input id='addItem' type='button'/>
+               
                <ul>
                   <li><i class="fa fa-square-o"></i>&nbspApple</li>
                   <li><i class="fa fa-square-o"></i>&nbspBanana</li>
@@ -37,9 +40,27 @@
             <!--close "list-items"-->
             <div class="completed list-items">
                <ul>
-                  <li><i class="fa fa-check-square-o"></i>&nbspKiwi<i class="fa fa-trash-o"></i></li>
-                  <li><i class="fa fa-check-square-o"></i>&nbspPotato<i class="fa fa-trash-o"></i></li>
-                  <li><i class="fa fa-check-square-o"></i>&nbspStrawberry<i class="fa fa-trash-o"></i></li>
+                  <li>
+                     <i class="fa fa-check-square-o"></i>
+                        Kiwi
+                        <button class="removeItem">
+                           <i class="fa fa-trash-o"></i>
+                        </button>
+                  </li>
+                  <li>
+                     <i class="fa fa-check-square-o"></i>
+                        Potato
+                        <button class="removeItem">
+                           <i class="fa fa-trash-o"></i>
+                        </button>
+                  </li>
+                  <li>
+                     <i class="fa fa-check-square-o"></i>
+                        Strawberry
+                        <button class="removeItem">
+                           <i class="fa fa-trash-o"></i>
+                        </button>
+                  </li>
                </ul>
             </div>
             <!--close "completed list-items"-->
