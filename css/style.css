@@ -136,22 +136,35 @@ margin-bottom: 5px;*/
 position: relative;
 }
 
-.completed.list-items{
+.completed{
 	width: 100%;
+	min-height: 10em;
 	background-color: gray;
+		clear: both;
+
+
+		margin:0 auto;
+		margin-top:.6em;
 
 
 
 }
 
-.completed.list-items ul{
+.completed ul{
+	line-height: 2em;
 	width: 28em;
-	margin: 1.5em auto;
+	margin: 0 auto;
+	padding-top: 1.5em;
 }
 
-.fa-trash-o{
+.completed ul li{
+	text-align: left;
+}
+
+.removeItem{
 float: right;
 margin-top: .5em;
+
 }
 
 
