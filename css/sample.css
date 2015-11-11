@@ -1,0 +1,25 @@
+.one{
+	width: 12em;
+	height: 300em;
+	background-color: blue;
+		float: left;
+		position: relative;
+}
+
+.two{
+	width: 12em;
+	height: 30em;
+	background-color: red;
+margin-top: 25px;
+position: fixed;
+bottom: 0;
+
+}
+
+.three{
+	width: 12em;
+	height: 10em;
+	background-color: green;
+float: left;
+
+}

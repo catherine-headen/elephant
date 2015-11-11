@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Elephant</title>
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700,300,300italic|Bevan' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/sample.css">
+		<script src="http://code.jquery.com/jquery.min.js"></script>
+			<script src="js/jquery.sticky-kit.min.js"></script>
+</head>
+<body>
+<div class="one">
+<div class="two">
+</div>
+</div>
+
+<div class="three">
+</div>
+	
+
+
+
+
+	  <script type="text/javascript">
+$(".two").stick_in_parent();
+$(".two").stick_in_parent()
+  .on("sticky_kit:stick", function(e) {
+    console.log("has stuck!", e.target);
+  })
+  .on("sticky_kit:unstick", function(e) {
+    console.log("has unstuck!", e.target);
+  });
+  </script>
+
+
+</body>
+</html>

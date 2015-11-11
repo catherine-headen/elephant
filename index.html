@@ -1,23 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<title>Elephant</title>
-	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700,300,300italic|Bevan' rel='stylesheet' type='text/css'>
-	<link rel="stylesheet" href="css/reset.css">
-	<link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-<div class="main">
-	<header class="upper-bg">
-		<img src="images/elephant.png" height="42" width="76" alt="elephant">
-		<p class="logo-name">Elephant</p>
-		<p class="slogan">never forget</p>
-	</header><!--close "upper-bg"-->
-	<section class="list">
-		<p>List</p>
-	</section><!--close "list-->
-</div><!--close "main"-->
-	
-</body>
+   <head>
+      <meta charset="UTF-8">
+      <title>Elephant</title>
+      <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700,300,300italic|Bevan' rel='stylesheet' type='text/css'>
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+      <link rel="stylesheet" href="css/reset.css">
+      <link rel="stylesheet" href="css/style.css">
+      <script src="http://code.jquery.com/jquery.min.js"></script>
+      <script src="js/jquery.sticky-kit.min.js"></script>
+   </head>
+   <body>
+      <div class="main">
+         <header class="upper-bg">
+            <img src="images/elephant.png" height="42" width="76" alt="elephant">
+            <p class="logo-name">Elephant</p>
+            <p class="slogan">never forget</p>
+         </header>
+         <!--close "upper-bg"-->
+         <section class="list">
+            <i class="list-menu fa fa-bars fa-lg"></i>
+            <form class="list-name">
+               <input type='text' placeholder='List Name'/>
+            </form>
+            <div class="list-items">
+               <form>
+                  <input type='text' placeholder='New Item...'/>
+               </form>
+               <ul>
+                  <li><i class="fa fa-square-o"></i>&nbspApple</li>
+                  <li><i class="fa fa-square-o"></i>&nbspBanana</li>
+                  <li><i class="fa fa-square-o"></i>&nbspOrange</li>
+
+               </ul>
+            </div>
+            <!--close "list-items"-->
+            <div class="completed list-items">
+               <ul>
+                  <li><i class="fa fa-check-square-o"></i>&nbspKiwi<i class="fa fa-trash-o"></i></li>
+                  <li><i class="fa fa-check-square-o"></i>&nbspPotato<i class="fa fa-trash-o"></i></li>
+                  <li><i class="fa fa-check-square-o"></i>&nbspStrawberry<i class="fa fa-trash-o"></i></li>
+               </ul>
+            </div>
+            <!--close "completed list-items"-->
+         </section>
+         <!--close "list"-->
+      </div>
+      <!--close "main"-->
+      <script type="text/javascript"></script>
+   </body>
 </html>
